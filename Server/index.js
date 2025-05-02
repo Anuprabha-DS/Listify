@@ -12,7 +12,7 @@ require('dotenv').config()
 
 const app = express()
 app.use(cors({
-    origin: "http://localhost:5173", // Allow all domains (for testing only)
+    origin: "*", // Allow all domains (for testing only)
     methods: "GET,POST,PUT,DELETE,PATCH",
     allowedHeaders: "Content-Type,Authorization"
 }));
