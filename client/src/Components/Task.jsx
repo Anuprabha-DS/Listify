@@ -44,7 +44,7 @@ const Task = () => {
     };
 
     try {
-      const res = await fetch("http://localhost:3000/task/addTask", {
+      const res = await fetch("backend-listfiy.vercel.app/task/addTask", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
